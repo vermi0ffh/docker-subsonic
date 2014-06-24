@@ -19,7 +19,7 @@ PODCAST_FOLDER=/podcasts
 PLAYLIST_FOLDER=/playlists
 
 
-SUBSONIC_USER=root
+SUBSONIC_USER=nobody
 
 export LANG=POSIX
 export LC_ALL=en_US.UTF-8

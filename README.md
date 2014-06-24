@@ -35,5 +35,6 @@ Defualt podcasts folder. If remote share ensure it's mounted before run command 
 docker run -d --net=host -v /*your_subsonichome_location*:/subsonic \
                          -v /*your_music_folder_location*:/music \
                          -v /*your_podcast_folder_location*:/podcasts \
+                         -v /etc/localtime:/etc/localtime:ro
                          --name=subsonic hurricane/docker-subsonic
 ```
