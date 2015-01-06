@@ -46,7 +46,7 @@ Defualt podcasts folder. If remote share ensure it's mounted before run command 
 
 The Subsonic image uses one optional enviromnet variable.
 
-`TZ`  
+###`TZ`  
 This environment variable is used to set the [TimeZone] of the container.
 
 [TimeZone]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
