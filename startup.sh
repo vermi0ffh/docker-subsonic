@@ -8,6 +8,11 @@
 #
 ###################################################################################
 
+# Apparently, Subsonic does not accept paths in the Transcoding settings.
+[ ! -d /subsonic/transcode ] && rm -r /subsonic/transcode
+[ ! -d /subsonic/transcode ] && mkdir -p /subsonic/transcode
+ln -s "$(which ffmpeg)" /subsonic/transcode/ffmpeg
+
 HOME=/subsonic
 HOST=0.0.0.0
 PORT=${WEB_PORT:-4040}
