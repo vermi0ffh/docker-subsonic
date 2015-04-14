@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ###################################################################################
 # Shell script for starting Subsonic.  See http://subsonic.org.
@@ -10,8 +10,8 @@
 
 HOME=/subsonic
 HOST=0.0.0.0
-PORT=${4040:-WEB_PORT}
-HTTPS_PORT=${0:-SSL_PORT}
+PORT=${WEB_PORT:-4040}
+HTTPS_PORT=${SSL_PORT:-0}
 CONTEXT_PATH=/
 MAX_MEMORY=200
 MUSIC_FOLDER=/music
