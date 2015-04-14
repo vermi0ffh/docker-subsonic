@@ -51,6 +51,13 @@ This environment variable is used to set the [TimeZone] of the container.
 
 [TimeZone]: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+####`WEB_PORT`  
+This environment variable is used to set the default http port of subsonic, if using https this variable because void. 
+Subsonic can use either HTTP or HTTPS not both. Default value is 4040.
+
+####`SSL_PORT`  
+This environment variable is used to set the https port of subsonic, if not set to 0 subsonic will listen only on the https port. 
+Default value is 4050.
 
 ## Build from docker file (Info only, not requried.):
 

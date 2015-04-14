@@ -25,7 +25,7 @@ RUN apt-get install -qy openjdk-6-jre
 RUN apt-get clean
 
 # install subsonic
-ADD http://downloads.sourceforge.net/project/subsonic/subsonic/5.0/subsonic-5.0.deb /tmp/subsonic.deb
+ADD http://downloads.sourceforge.net/project/subsonic/subsonic/5.2.1/subsonic-5.2.1.deb /tmp/subsonic.deb
 RUN dpkg -i /tmp/subsonic.deb && rm /tmp/subsonic.deb
 
 # Create hardlinks to the transcoding binaries.
