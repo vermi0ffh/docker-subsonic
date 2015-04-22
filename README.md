@@ -44,7 +44,7 @@ Defualt podcasts folder. If remote share ensure it's mounted before run command 
 
 ## Environment Variables
 
-The Subsonic image uses one optional enviromnet variable.
+The Subsonic image uses four optional enviromnet variable.
 
 ####`TZ`  
 This environment variable is used to set the [TimeZone] of the container.
@@ -53,11 +53,17 @@ This environment variable is used to set the [TimeZone] of the container.
 
 ####`WEB_PORT`  
 This environment variable is used to set the default http port of subsonic, if using https this variable because void. 
-Subsonic can use either HTTP or HTTPS not both. Default value is 4040.
+Subsonic can use either HTTP or HTTPS not both. Default value is 4040. If networking is not set to host ensure you map the port,
+to the host using the p flag.
 
 ####`SSL_PORT`  
 This environment variable is used to set the https port of subsonic, if not set to 0 subsonic will listen only on the https port. 
-Default value is 4050.
+Default value is 4050. If networking is not set to host ensure you map the port to the host using the p flag.
+
+####`MAX_MEM`
+This environment variable is used to set the maximum Java heap size in megabytes.
+Default value is 150.
+
 
 ## Build from docker file (Info only, not requried.):
 
