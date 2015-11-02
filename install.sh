@@ -111,7 +111,7 @@ chmod -R +x /etc/service/ /etc/my_init.d/
 #########################################
 
 # Install Subsonic
-wget -q http://downloads.sourceforge.net/project/subsonic/subsonic/5.2.1/subsonic-5.2.1.deb -O /tmp/subsonic.deb
+wget -q http://downloads.sourceforge.net/project/subsonic/subsonic/5.3/subsonic-5.3.deb -O /tmp/subsonic.deb
 dpkg -i /tmp/subsonic.deb && rm /tmp/subsonic.deb
 
 #########################################
